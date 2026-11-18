@@ -1,0 +1,13 @@
+input_run: /mnt/workspace/Box_3D/GeoUP/local_inputs/scene-0103
+checkpoint: /mnt/workspace/Box_3D/models/geoup/stage-2/nuscenes.pth
+model_config: projects/configs/GeoUP/streampetr_opus_3dppe_raydn_vggt_tune_raymap_d12_flash_bf16_672_seq_24e_16x1_womv_occseq8_seq4_view_attn.py
+output: /mnt/workspace/Box_3D/GeoUP/outputs/nuscenes_scene0103_occ
+frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+tasks: [bbox, depth, camera, occ]
+occ_backend: pytorch_sampling_cpu_sparse
+device: cuda
+precision: float32
+score_threshold: 0.25
+image_fit: bottom_crop
+image_height: 224
+image_width: 672

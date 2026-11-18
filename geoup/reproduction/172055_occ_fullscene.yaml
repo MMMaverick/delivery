@@ -1,0 +1,13 @@
+input_run: /mnt/workspace/Box_3D/GeoUP/local_inputs/172055_full
+checkpoint: /mnt/workspace/Box_3D/models/geoup/stage-2/nuscenes.pth
+model_config: projects/configs/GeoUP/streampetr_opus_3dppe_raydn_vggt_tune_raymap_d12_flash_bf16_672_seq_24e_16x1_womv_occseq8_seq4_view_attn.py
+output: /mnt/workspace/Box_3D/GeoUP/outputs/172055_occ_fullscene
+frames: all
+tasks: [bbox, depth, camera, occ]
+occ_backend: pytorch_sampling_cpu_sparse
+device: cuda
+precision: float32
+score_threshold: 0.25
+image_fit: letterbox
+image_height: 448
+image_width: 672

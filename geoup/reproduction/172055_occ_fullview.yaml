@@ -1,0 +1,13 @@
+input_run: /mnt/workspace/Box_3D/monocular-3d-detection-v1-restored/outputs/mesh_matched2d_expanded_20261116/172055/run
+checkpoint: /mnt/workspace/Box_3D/models/geoup/stage-2/nuscenes.pth
+model_config: projects/configs/GeoUP/streampetr_opus_3dppe_raydn_vggt_tune_raymap_d12_flash_bf16_672_seq_24e_16x1_womv_occseq8_seq4_view_attn.py
+output: /mnt/workspace/Box_3D/GeoUP/outputs/172055_occ_fullview
+frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+tasks: [bbox, depth, camera, occ]
+occ_backend: pytorch_sampling_cpu_sparse
+device: cuda
+precision: float32
+score_threshold: 0.25
+image_fit: letterbox
+image_height: 448
+image_width: 672
