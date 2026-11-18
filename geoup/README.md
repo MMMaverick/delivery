@@ -22,4 +22,4 @@ cat nuscenes_scene0103_occ.tar.gz.part* | tar -xz
 
 不包含模型权重、运行环境二进制和原始输入数据集。配置中现有绝对路径需根据部署位置调整。预测及可视化不等于独立 GT 精度评测；训练集/验证集及完整视野适配说明见 reproduction 中 `local/NUSCENES_COMPARISON.md`、`local/OCC_FULLVIEW.md`、`local/LOCAL_FULLSCENE.md`。
 
-仓库用于索引、说明和配置；完整结果分卷准备放 GitHub Release，避免将 GB 级产物写入 Git 历史。当前尚未收到目标仓库地址，未执行上传。
+仓库用于索引、说明和配置；完整结果分卷已上传至 [GitHub Release](https://github.com/MMMaverick/delivery/releases/tag/geoup-results-20261118)，避免将 GB 级产物写入 Git 历史。下载全部 14 个分卷及校验清单后，按上述命令验证和解压。

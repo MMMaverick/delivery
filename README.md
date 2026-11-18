@@ -8,6 +8,6 @@
 - nuScenes：`nuscenes_scene0103_occ`，scene-0103，40 个关键帧，属于 val / mini_val。
 - 保留早期诊断结果，具体结论见 `geoup/reproduction/` 下各实验说明。
 
-完整结果约 3.16 GiB，已按最多 512 MiB 分卷打包，计划通过本仓库 Release 发布。**当前仅说明、配置、代码和清单入库，完整二进制结果尚未上传。**
+完整结果约 3.16 GiB，已按最多 512 MiB 分卷打包，全部上传至 [GeoUP 完整结果 Release](https://github.com/MMMaverick/delivery/releases/tag/geoup-results-20261118)。共 14 个结果分卷和 3 个清单/验证附件。
 
 文件校验：`geoup/manifests/SHA256SUMS`、`geoup/manifests/source_manifest.json`。
